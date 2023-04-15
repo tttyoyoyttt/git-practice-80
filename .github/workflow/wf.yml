@@ -1,0 +1,13 @@
+name: wf
+on:
+  push:
+    branches: [master]
+    
+ jobs:
+  job1:
+  runs-on: ubuntu-latest
+  steps:
+  - name: checks-out your repository under $GITHUB_WORKSPACE
+    users: actions/checkout@v2
+  - name: use echo command
+    run: echo "sample-wf"
